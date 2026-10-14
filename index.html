@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishnu P — Floral &amp; Fruit Design, Dubai</title>
+<meta name="description" content="Vishnu P is a floral and fruit designer in Dubai, UAE. Signature centrepieces, hand-tied bouquets, event styling and hand-carved watermelon fruit art.">
+<meta property="og:title" content="Vishnu P — Floral &amp; Fruit Design, Dubai">
+<meta property="og:description" content="Signature centrepieces, bouquets, event styling and hand-carved watermelon fruit art.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0c'/%3E%3Cpath d='M16 7c2.6 0 4.4 2 4.4 4.4S18.6 16 16 16s-4.4-2-4.4-4.6S13.4 7 16 7z' fill='%23c2a46a'/%3E%3Cpath d='M16 16v9' stroke='%23c2a46a' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0b0c; --ink-2:#121214; --ink-3:#1a1a1d;
+  --cream:#f4f1ea; --cream-2:#b6b0a6; --cream-3:#78736b;
+  --brass:#c2a46a; --brass-2:#8f7742;
+  --line:rgba(244,241,234,.13);
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{background:var(--ink);color:var(--cream);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+::selection{background:var(--brass);color:var(--ink);}
+.serif{font-family:'Cormorant Garamond',Georgia,serif;}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px);}
+.lbl{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);font-weight:500;}
+
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:70;transition:background .5s var(--ease),border-color .5s;border-bottom:1px solid transparent;}
+header.on{background:rgba(11,11,12,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--line);}
+nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,4vw,56px);max-width:1400px;margin:0 auto;}
+.brandn{font-family:'Cormorant Garamond',serif;font-size:1.35rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;}
+.nl{display:flex;gap:32px;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-2);}
+.nl a{transition:color .3s;}
+.nl a:hover{color:var(--brass);}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;display:flex;align-items:flex-end;}
+.hero-img{position:absolute;inset:0;}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 42%;animation:breathe 26s ease-in-out infinite alternate;}
+@keyframes breathe{from{transform:scale(1.04)}to{transform:scale(1.14)}}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.76) 0%,rgba(11,11,12,.26) 26%,rgba(11,11,12,.62) 58%,rgba(11,11,12,.93) 84%,var(--ink) 100%);}
+.hero-in{position:relative;z-index:2;width:100%;text-shadow:0 2px 26px rgba(8,8,9,.75);padding-bottom:clamp(44px,7vh,88px);}
+.hero .lbl{display:block;margin-bottom:22px;opacity:0;animation:up 1s var(--ease) .25s forwards;}
+.hname{font-family:'Cormorant Garamond',serif;font-size:clamp(3.4rem,12vw,10rem);font-weight:300;line-height:.9;letter-spacing:-.02em;margin-bottom:20px;}
+.hname span{display:block;overflow:hidden;}
+.hname span i{display:block;font-style:normal;transform:translateY(105%);animation:rise 1.2s var(--ease) .1s forwards;}
+.hname span:nth-child(2) i{animation-delay:.22s;}
+@keyframes rise{to{transform:none}}
+@keyframes up{to{opacity:1}}
+.hsub{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-2);opacity:0;animation:up 1s var(--ease) .75s forwards;}
+.hsub em{font-style:normal;color:var(--brass);}
+.scroll-cue{position:absolute;right:clamp(20px,4vw,56px);bottom:clamp(44px,7vh,88px);z-index:2;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--cream-3);writing-mode:vertical-rl;display:flex;align-items:center;gap:12px;opacity:0;animation:up 1s var(--ease) 1.1s forwards;}
+.scroll-cue::after{content:'';width:1px;height:54px;background:linear-gradient(var(--brass),transparent);}
+
+/* statement */
+.statement{padding:clamp(70px,11vw,140px) 0 clamp(50px,7vw,90px);}
+.st-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:end;}
+.st-grid p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3.2vw,2.6rem);line-height:1.3;font-weight:300;}
+.st-grid p em{font-style:italic;color:var(--brass);}
+.st-side{color:var(--cream-2);font-size:.97rem;max-width:46ch;}
+.figs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:clamp(40px,6vw,70px);}
+.fig{background:var(--ink);padding:26px 20px;}
+.fig b{font-family:'Cormorant Garamond',serif;display:block;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1;color:var(--brass);margin-bottom:8px;}
+.fig span{font-size:.68rem;letter-spacing:.17em;text-transform:uppercase;color:var(--cream-3);}
+
+/* section head */
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-bottom:clamp(26px,4vw,44px);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.6rem);font-weight:300;line-height:1.04;letter-spacing:-.015em;}
+h2 em{font-style:italic;color:var(--brass);}
+.sh .lbl{margin-bottom:12px;display:block;}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:center;padding:18px 0 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:clamp(26px,4vw,44px);}
+.fg{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.fb{background:none;border:1px solid transparent;color:var(--cream-2);font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px;cursor:pointer;transition:color .3s,border-color .3s,background .3s;}
+.fb:hover{color:var(--cream);}
+.fb.on{color:var(--ink);background:var(--brass);border-color:var(--brass);}
+.sw{background:none;border:1px solid transparent;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:7px 12px 7px 8px;transition:border-color .3s,background .3s;}
+.sw i{width:13px;height:13px;border-radius:50%;display:block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.25);}
+.sw span{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--cream-3);transition:color .3s;}
+.sw:hover span{color:var(--cream);}
+.sw.on{border-color:var(--brass);background:rgba(194,164,106,.1);}
+.sw.on span{color:var(--brass);}
+
+/* grid */
+.grid{column-count:3;column-gap:clamp(14px,1.6vw,22px);}
+.piece{break-inside:avoid;margin:0 0 clamp(14px,1.6vw,22px);cursor:pointer;outline:none;}
+.piece.hide{display:none;}
+.shot{position:relative;overflow:hidden;background:var(--ink-2);}
+.shot img{width:100%;height:auto;transition:transform 1.1s var(--ease),filter .6s;}
+.piece:hover .shot img,.piece:focus-visible .shot img{transform:scale(1.045);}
+.shot::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,11,12,.72));opacity:0;transition:opacity .5s var(--ease);}
+.piece:hover .shot::after,.piece:focus-visible .shot::after{opacity:1;}
+.piece figcaption{padding:13px 2px 0;display:flex;flex-direction:column;gap:5px;}
+.pt{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;display:flex;align-items:center;gap:9px;line-height:1.25;}
+.mark{width:7px;height:7px;background:var(--brass);border-radius:50%;flex:none;box-shadow:0 0 0 3px rgba(194,164,106,.17);}
+.pn{font-size:.72rem;letter-spacing:.06em;color:var(--cream-3);}
+.piece:focus-visible{outline:1px solid var(--brass);outline-offset:6px;}
+.empty{text-align:center;color:var(--cream-3);padding:70px 0;font-family:'Cormorant Garamond',serif;font-size:1.4rem;display:none;}
+
+/* signature band */
+.sig{margin:clamp(70px,11vw,140px) 0 0;padding:clamp(60px,9vw,110px) 0;border-top:1px solid var(--line);background:var(--ink-2);}
+.sig-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(34px,6vw,76px);align-items:center;}
+.sig p{color:var(--cream-2);margin-top:20px;max-width:48ch;}
+.sig p strong{color:var(--cream);font-weight:500;}
+.sig-shots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.sig-shots img{width:100%;aspect-ratio:3/4;object-fit:cover;}
+
+/* about */
+.about{padding:clamp(70px,11vw,140px) 0;}
+.ab-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(34px,6vw,76px);align-items:start;}
+.ab-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 22%;}
+.ab-body p{color:var(--cream-2);margin-bottom:16px;}
+.ab-body p strong{color:var(--cream);font-weight:500;}
+.ab-lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.38;font-weight:300;color:var(--cream)!important;margin-bottom:22px!important;}
+.roles{margin-top:34px;border-top:1px solid var(--line);}
+.role{display:grid;grid-template-columns:.3fr .7fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);}
+.role .yr{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);padding-top:5px;}
+.role h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;margin-bottom:3px;}
+.role span{font-size:.86rem;color:var(--cream-3);}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:26px;}
+.tag{border:1px solid var(--line);padding:7px 13px;font-size:.72rem;letter-spacing:.07em;color:var(--cream-2);}
+
+/* contact */
+.contact{padding:clamp(70px,11vw,140px) 0;border-top:1px solid var(--line);text-align:center;}
+.cmail{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,6vw,4.6rem);font-weight:300;letter-spacing:-.02em;display:inline-block;padding-bottom:12px;border-bottom:1px solid var(--line);transition:color .4s,border-color .4s;word-break:break-word;margin:18px 0 34px;}
+.cmail:hover{color:var(--brass);border-bottom-color:var(--brass);}
+.crow{display:flex;flex-wrap:wrap;gap:14px 44px;justify-content:center;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-2);}
+.crow a:hover{color:var(--brass);}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);}
+.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-3);}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:200;background:rgba(7,7,8,.97);display:none;opacity:0;transition:opacity .4s var(--ease);}
+.lb.open{display:block;}
+.lb.show{opacity:1;}
+.lb-in{height:100%;height:100dvh;display:grid;grid-template-columns:minmax(0,1fr) 360px;grid-template-rows:minmax(0,1fr);}
+.lb-stage{position:relative;overflow:hidden;min-height:0;min-width:0;}
+.lb-stage img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:calc(100% - clamp(32px,6vw,88px));max-height:calc(100% - clamp(32px,6vw,88px));width:auto;height:auto;object-fit:contain;box-shadow:0 30px 80px -30px rgba(0,0,0,.9);}
+.lb-side{border-left:1px solid var(--line);padding:clamp(28px,4vw,52px) clamp(24px,3vw,40px);display:flex;flex-direction:column;justify-content:center;gap:16px;overflow-y:auto;}
+.lb-cat{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--brass);}
+.lb-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,3vw,2.5rem);font-weight:300;line-height:1.14;}
+.lb-notes{list-style:none;border-top:1px solid var(--line);padding-top:18px;margin-top:4px;}
+.lb-notes li{font-size:.86rem;color:var(--cream-2);padding:7px 0;border-bottom:1px solid rgba(244,241,234,.06);display:flex;gap:12px;}
+.lb-notes li::before{content:'';width:4px;height:4px;background:var(--brass);border-radius:50%;margin-top:9px;flex:none;}
+.lb-carved{border:1px solid var(--brass);color:var(--brass);padding:11px 16px;font-size:.74rem;letter-spacing:.1em;display:flex;align-items:center;gap:11px;margin-top:6px;}
+.lb-carved::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--brass);flex:none;}
+.lb-count{font-size:.68rem;letter-spacing:.2em;color:var(--cream-3);margin-top:auto;padding-top:20px;}
+.lb-x,.lb-nav{position:absolute;background:rgba(11,11,12,.6);border:1px solid var(--line);color:var(--cream);width:48px;height:48px;display:grid;place-items:center;cursor:pointer;transition:background .3s,border-color .3s,color .3s;z-index:3;}
+.lb-x:hover,.lb-nav:hover{background:var(--brass);border-color:var(--brass);color:var(--ink);}
+.lb-x{top:clamp(14px,2vw,24px);right:clamp(14px,2vw,24px);}
+.lb-nav svg,.lb-x svg{width:18px;height:18px;}
+.lb-prev{left:clamp(14px,2vw,24px);top:50%;transform:translateY(-50%);}
+.lb-next{right:clamp(14px,2vw,24px);top:50%;transform:translateY(-50%);}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease);}
+.rv.in{opacity:1;transform:none;}
+
+@media (max-width:1100px){
+  .grid{column-count:2;}
+  .st-grid,.sig-grid,.ab-grid{grid-template-columns:1fr;}
+  .ab-photo{max-width:420px;}
+  .lb-in{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;}
+  .lb-side{border-left:0;border-top:1px solid var(--line);max-height:42vh;justify-content:flex-start;}
+  .lb-count{margin-top:12px;}
+}
+@media (max-width:720px){
+  .nl{display:none;}
+  .grid{column-count:1;}
+  .figs{grid-template-columns:repeat(2,1fr);}
+  .filters{gap:16px;flex-direction:column;align-items:flex-start;}
+  .role{grid-template-columns:1fr;gap:6px;}
+  .sig-shots{grid-template-columns:repeat(3,1fr);gap:7px;}
+  .scroll-cue{display:none;}
+  .lb-prev{left:10px}.lb-next{right:10px}
+  .lb-x,.lb-nav{width:42px;height:42px;}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;}.hname span i{transform:none}.hero .lbl,.hsub,.scroll-cue{opacity:1}}
+</style>
+</head>
+<body>
+
+<header id="hdr"><nav>
+  <a href="#" class="brandn">Vishnu P</a>
+  <div class="nl">
+    <a href="#work">Work</a><a href="#signature">Signature</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="lbl" style="letter-spacing:.2em">Enquire</a>
+</nav></header>
+
+<section class="hero">
+  <div class="hero-img"><img src="images/hero.jpg" alt="Floral centrepiece by Vishnu P" fetchpriority="high"></div>
+  <div class="hero-in"><div class="wrap">
+    <span class="lbl">Floral &amp; Fruit Design — Dubai, U.A.E.</span>
+    <h1 class="hname"><span><i>Vishnu</i></span><span><i>P</i></span></h1>
+    <div class="hsub"><span>Florist</span><em>·</em><span>Floral Designer</span><em>·</em><span>Fruit Arrangement Artist</span></div>
+  </div></div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<section class="statement"><div class="wrap">
+  <div class="st-grid rv">
+    <p>Flowers above, <em>hand-carved fruit</em> below — built as one piece.</p>
+    <div class="st-side">
+      <p>Five years designing for UAE retail and events: custom bouquets, vase arrangements, event displays and large signature centrepieces that sit on a bed of fruit with a watermelon carved by hand — a swan, a dove, a koi pair, a horse.</p>
+    </div>
+  </div>
+  <div class="figs rv">
+    <div class="fig"><b>26</b><span>Designs shown</span></div>
+    <div class="fig"><b>10</b><span>With carved watermelon</span></div>
+    <div class="fig"><b>5</b><span>Years in UAE</span></div>
+    <div class="fig"><b>2</b><span>Emirates</span></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="sh rv">
+    <div><span class="lbl">Selected Work</span><h2>The <em>Composition</em></h2></div>
+    <div class="st-side" style="max-width:38ch;font-size:.9rem">Every piece listed with the botanicals it was built from. Filter by type, or by colour.</div>
+  </div>
+  <div class="filters rv">
+    <div class="fg"><button class="fb on" data-f="cat" data-v="all">All Work</button><button class="fb" data-f="cat" data-v="centrepiece">Signature Centrepieces</button><button class="fb" data-f="cat" data-v="bouquet">Hand-Tied Bouquets</button><button class="fb" data-f="cat" data-v="vase">Vase &amp; Box</button><button class="fb" data-f="cat" data-v="event">Events &amp; Displays</button><button class="fb" data-f="cat" data-v="fruit">Fruit Art</button></div>
+    <div class="fg"><button class="sw" data-f="colour" data-v="white" title="White & Green" aria-label="White & Green"><i style="background:#efece4"></i><span>White & Green</span></button><button class="sw" data-f="colour" data-v="pink" title="Pink" aria-label="Pink"><i style="background:#e59ab2"></i><span>Pink</span></button><button class="sw" data-f="colour" data-v="peach" title="Peach" aria-label="Peach"><i style="background:#edaa80"></i><span>Peach</span></button><button class="sw" data-f="colour" data-v="red" title="Red" aria-label="Red"><i style="background:#b5342c"></i><span>Red</span></button><button class="sw" data-f="colour" data-v="purple" title="Purple" aria-label="Purple"><i style="background:#9a7cc2"></i><span>Purple</span></button><button class="sw" data-f="colour" data-v="mixed" title="Mixed" aria-label="Mixed"><i style="background:#d8b45f"></i><span>Mixed</span></button></div>
+  </div>
+  <div class="grid" id="grid"><figure class="piece" data-i="0" data-cat="centrepiece" data-colour="peach" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/peach-orchid-cascade-t.jpg" alt="Peach Orchid Cascade" loading="lazy" width="760" height="1211"></div>
+<figcaption><span class="pt">Peach Orchid Cascade<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Phalaenopsis orchid · Gerbera · Garden rose</span></figcaption>
+</figure>
+<figure class="piece" data-i="1" data-cat="centrepiece" data-colour="pink" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/garden-rose-dome-t.jpg" alt="Garden Rose Dome with Orchid Cascade" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Garden Rose Dome with Orchid Cascade<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Garden rose · Peony · Calla lily</span></figcaption>
+</figure>
+<figure class="piece" data-i="2" data-cat="centrepiece" data-colour="pink" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/eid-flower-tree-t.jpg" alt="Eid Flower Tree" loading="lazy" width="760" height="1139"></div>
+<figcaption><span class="pt">Eid Flower Tree<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Rose · Hydrangea · Branch trunk</span></figcaption>
+</figure>
+<figure class="piece" data-i="3" data-cat="centrepiece" data-colour="pink" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/pink-orchid-crescent-t.jpg" alt="Pink Orchid Crescent" loading="lazy" width="760" height="1001"></div>
+<figcaption><span class="pt">Pink Orchid Crescent<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Phalaenopsis orchid · Rose · Anthurium</span></figcaption>
+</figure>
+<figure class="piece" data-i="4" data-cat="centrepiece" data-colour="white" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/white-orchid-delphinium-t.jpg" alt="White Orchid and Delphinium Centrepiece" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">White Orchid and Delphinium Centrepiece<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Phalaenopsis orchid · Hydrangea · Rose</span></figcaption>
+</figure>
+<figure class="piece" data-i="5" data-cat="centrepiece" data-colour="red" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/red-floral-column-t.jpg" alt="Red Floral Column" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Red Floral Column<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Hydrangea · Celosia · Rose</span></figcaption>
+</figure>
+<figure class="piece" data-i="6" data-cat="centrepiece" data-colour="purple" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/purple-garden-t.jpg" alt="Purple Garden Centrepiece" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Purple Garden Centrepiece<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Rose · Lisianthus · Hydrangea</span></figcaption>
+</figure>
+<figure class="piece" data-i="7" data-cat="centrepiece" data-colour="white" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/white-gladiolus-t.jpg" alt="White Gladiolus Centrepiece" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">White Gladiolus Centrepiece<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Gladiolus · Rose · Hydrangea</span></figcaption>
+</figure>
+<figure class="piece" data-i="8" data-cat="centrepiece" data-colour="pink" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/lily-orchid-tower-t.jpg" alt="Lily and Orchid Tower" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Lily and Orchid Tower<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Oriental lily · Delphinium · Rose</span></figcaption>
+</figure>
+<figure class="piece" data-i="9" data-cat="centrepiece" data-colour="pink" data-carved='1' tabindex="0">
+<div class="shot"><img src="images/pink-rose-vanda-t.jpg" alt="Pink Rose and Vanda Centrepiece" loading="lazy" width="760" height="1351"></div>
+<figcaption><span class="pt">Pink Rose and Vanda Centrepiece<span class="mark" title="Includes hand-carved watermelon"></span></span><span class="pn">Rose · Hydrangea · Anthurium</span></figcaption>
+</figure>
+<figure class="piece" data-i="10" data-cat="bouquet" data-colour="mixed" tabindex="0">
+<div class="shot"><img src="images/two-tone-statement-t.jpg" alt="Two-Tone Statement Bouquet" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Two-Tone Statement Bouquet</span><span class="pn">Red rose · Pink rose · Celosia</span></figcaption>
+</figure>
+<figure class="piece" data-i="11" data-cat="bouquet" data-colour="pink" tabindex="0">
+<div class="shot"><img src="images/garden-rose-hand-t.jpg" alt="Garden Rose Hand Bouquet" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Garden Rose Hand Bouquet</span><span class="pn">Garden rose · Spray rose · Chamomile</span></figcaption>
+</figure>
+<figure class="piece" data-i="12" data-cat="bouquet" data-colour="red" tabindex="0">
+<div class="shot"><img src="images/gladiolus-spider-gerbera-t.jpg" alt="Gladiolus and Spider Gerbera" loading="lazy" width="760" height="1351"></div>
+<figcaption><span class="pt">Gladiolus and Spider Gerbera</span><span class="pn">Red gladiolus · Orange spider gerbera · Allium</span></figcaption>
+</figure>
+<figure class="piece" data-i="13" data-cat="bouquet" data-colour="pink" tabindex="0">
+<div class="shot"><img src="images/soft-pink-garden-roses-t.jpg" alt="Soft Pink Garden Roses" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Soft Pink Garden Roses</span><span class="pn">Garden rose · Spray chrysanthemum · Waxflower</span></figcaption>
+</figure>
+<figure class="piece" data-i="14" data-cat="bouquet" data-colour="pink" tabindex="0">
+<div class="shot"><img src="images/new-baby-bouquet-t.jpg" alt="New Baby Bouquet" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">New Baby Bouquet</span><span class="pn">Oriental lily · Rose · Hydrangea</span></figcaption>
+</figure>
+<figure class="piece" data-i="15" data-cat="bouquet" data-colour="purple" tabindex="0">
+<div class="shot"><img src="images/iridescent-wrap-t.jpg" alt="Iridescent Wrap Bouquet" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Iridescent Wrap Bouquet</span><span class="pn">Rose · Hydrangea · Carnation</span></figcaption>
+</figure>
+<figure class="piece" data-i="16" data-cat="vase" data-colour="pink" tabindex="0">
+<div class="shot"><img src="images/peony-snapdragon-vase-t.jpg" alt="Peony and Snapdragon Vase" loading="lazy" width="760" height="971"></div>
+<figcaption><span class="pt">Peony and Snapdragon Vase</span><span class="pn">Peony · Snapdragon · Chrysanthemum</span></figcaption>
+</figure>
+<figure class="piece" data-i="17" data-cat="vase" data-colour="red" tabindex="0">
+<div class="shot"><img src="images/red-rose-ranunculus-t.jpg" alt="Red Rose and Ranunculus" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Red Rose and Ranunculus</span><span class="pn">Rose · Ranunculus · Carnation</span></figcaption>
+</figure>
+<figure class="piece" data-i="18" data-cat="vase" data-colour="peach" tabindex="0">
+<div class="shot"><img src="images/gerbera-meadow-box-t.jpg" alt="Gerbera Meadow Box" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Gerbera Meadow Box</span><span class="pn">Gerbera · Ornithogalum · Moss-filled box</span></figcaption>
+</figure>
+<figure class="piece" data-i="19" data-cat="event" data-colour="pink" tabindex="0">
+<div class="shot"><img src="images/garden-gift-scene-t.jpg" alt="Garden Gift Scene" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Garden Gift Scene</span><span class="pn">Rose · Hydrangea · Cloche-covered rose</span></figcaption>
+</figure>
+<figure class="piece" data-i="20" data-cat="event" data-colour="white" tabindex="0">
+<div class="shot"><img src="images/yacht-dining-styling-t.jpg" alt="Yacht Dining Styling" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Yacht Dining Styling</span><span class="pn">Vase arrangement · Orchid · Fruit accents</span></figcaption>
+</figure>
+<figure class="piece" data-i="21" data-cat="event" data-colour="white" tabindex="0">
+<div class="shot"><img src="images/all-white-gift-display-t.jpg" alt="All-White Gift Display" loading="lazy" width="760" height="570"></div>
+<figcaption><span class="pt">All-White Gift Display</span><span class="pn">Phalaenopsis orchid · Tulip · Rose</span></figcaption>
+</figure>
+<figure class="piece" data-i="22" data-cat="event" data-colour="pink" tabindex="0">
+<div class="shot"><img src="images/jewellery-display-garland-t.jpg" alt="Jewellery Display Garland" loading="lazy" width="760" height="570"></div>
+<figcaption><span class="pt">Jewellery Display Garland</span><span class="pn">Rose · Oriental lily · Orchid</span></figcaption>
+</figure>
+<figure class="piece" data-i="23" data-cat="fruit" data-colour="mixed" tabindex="0">
+<div class="shot"><img src="images/fruit-christmas-trees-t.jpg" alt="Fruit Christmas Trees" loading="lazy" width="760" height="570"></div>
+<figcaption><span class="pt">Fruit Christmas Trees</span><span class="pn">Berries · Grape · Kiwi</span></figcaption>
+</figure>
+<figure class="piece" data-i="24" data-cat="fruit" data-colour="red" tabindex="0">
+<div class="shot"><img src="images/watermelon-fruit-cake-t.jpg" alt="Watermelon Fruit Cake" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Watermelon Fruit Cake</span><span class="pn">Watermelon base · Fresh berries · Fig</span></figcaption>
+</figure>
+<figure class="piece" data-i="25" data-cat="fruit" data-colour="red" tabindex="0">
+<div class="shot"><img src="images/berry-bouquet-t.jpg" alt="Berry Bouquet" loading="lazy" width="760" height="1013"></div>
+<figcaption><span class="pt">Berry Bouquet</span><span class="pn">Strawberry · Blueberry · Blackberry</span></figcaption>
+</figure></div>
+  <p class="empty" id="empty">No pieces in that combination — try another colour.</p>
+</div></section>
+
+<section class="sig" id="signature"><div class="wrap">
+  <div class="sig-grid">
+    <div class="rv">
+      <span class="lbl">The Signature</span>
+      <h2 style="margin-top:12px">Carved by <em>hand</em></h2>
+      <p>Under the flowers on every signature centrepiece sits a bed of fresh fruit, and at its centre a watermelon carved by hand into a <strong>swan, a dove, a koi pair, a horse, a phoenix or a bloom of roses</strong>.</p>
+      <p>It is cut fresh for each piece, it cannot be reused, and it is the part people photograph. Ten of the twenty-six designs here carry one.</p>
+    </div>
+    <div class="sig-shots rv"><img src="images/peach-orchid-cascade-t.jpg" alt="Peach Orchid Cascade" loading="lazy"><img src="images/garden-rose-dome-t.jpg" alt="Garden Rose Dome with Orchid Cascade" loading="lazy"><img src="images/eid-flower-tree-t.jpg" alt="Eid Flower Tree" loading="lazy"></div>
+  </div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+  <div class="ab-grid">
+    <div class="ab-photo rv"><img src="images/vishnu.jpg" alt="Vishnu P" loading="lazy"></div>
+    <div class="ab-body rv">
+      <span class="lbl">About</span>
+      <p class="ab-lead" style="margin-top:14px">Florist with five years of UAE retail experience, designing for walk-in, phone and event customers.</p>
+      <p>I design custom bouquets, floral displays and fruit arrangements — matching flower type, colour and size to the occasion and the budget. My work has run through high-traffic retail, including the floral counter at <strong>Carrefour Yas Mall in Abu Dhabi</strong>, and now at <strong>Ambrosia, Fresh Market in Dubai</strong>.</p>
+      <p>I also hold a <strong>Diploma in Air-Conditioning and Refrigeration</strong>, which is less unusual than it sounds in this trade: it means I understand cold-room and flower-chiller conditions, so stock stays fresh longer and less of it is thrown away.</p>
+      <div class="roles">
+        <div class="role"><div class="yr">2023 — Present</div><div><h4>Florist &amp; Fruit Arrangement Artist</h4><span>Ambrosia, Fresh Market — Dubai, U.A.E.</span></div></div>
+        <div class="role"><div class="yr">2021 — 2023</div><div><h4>Florist</h4><span>Wardit Al Banafsaj Flowers, Carrefour Yas Mall — Abu Dhabi, U.A.E.</span></div></div>
+      </div>
+      <div class="tags">
+        <span class="tag">Bespoke bouquets</span><span class="tag">Event floral decoration</span><span class="tag">Fruit gift baskets</span>
+        <span class="tag">Seasonal flower selection</span><span class="tag">Colour coordination</span><span class="tag">Freshness &amp; cold storage</span>
+        <span class="tag">Retail display setup</span><span class="tag">Delivery coordination</span>
+      </div>
+      <div class="tags" style="margin-top:14px">
+        <span class="tag" style="border-color:rgba(194,164,106,.4);color:var(--brass)">English</span>
+        <span class="tag" style="border-color:rgba(194,164,106,.4);color:var(--brass)">Malayalam</span>
+        <span class="tag" style="border-color:rgba(194,164,106,.4);color:var(--brass)">Hindi</span>
+        <span class="tag" style="border-color:rgba(194,164,106,.4);color:var(--brass)">Tamil</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap rv">
+  <span class="lbl">Enquiries</span>
+  <a href="mailto:vishnupookootty@gmail.com" class="cmail">vishnupookootty@gmail.com</a>
+  <div class="crow">
+    <a href="tel:+971569529535">+971 56 952 9535</a>
+    <span>Dubai, United Arab Emirates</span>
+    <span>Weddings · Events · Retail · Gifting</span>
+  </div>
+</div></section>
+
+<footer><div class="wrap foot">
+  <div>Vishnu P — Floral &amp; Fruit Design</div>
+  <div>&copy; <span id="yr"></span> Dubai, U.A.E.</div>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Design detail">
+  <button class="lb-x" id="lbx" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  <div class="lb-in">
+    <div class="lb-stage">
+      <button class="lb-nav lb-prev" id="lbp" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <img id="lbimg" src="" alt="">
+      <button class="lb-nav lb-next" id="lbn" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+    <aside class="lb-side">
+      <div class="lb-cat" id="lbcat"></div>
+      <div class="lb-title" id="lbtitle"></div>
+      <ul class="lb-notes" id="lbnotes"></ul>
+      <div class="lb-carved" id="lbcarved" hidden></div>
+      <div class="lb-count" id="lbcount"></div>
+    </aside>
+  </div>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var DATA=[{"src": "images/peach-orchid-cascade.jpg", "title": "Peach Orchid Cascade", "notes": ["Phalaenopsis orchid", "Gerbera", "Garden rose", "Protea", "Curly willow"], "carved": "Carved watermelon — bird", "cat": "Signature Centrepieces"}, {"src": "images/garden-rose-dome.jpg", "title": "Garden Rose Dome with Orchid Cascade", "notes": ["Garden rose", "Peony", "Calla lily", "Amaryllis", "Pussy willow"], "carved": "Carved watermelon — swan", "cat": "Signature Centrepieces"}, {"src": "images/eid-flower-tree.jpg", "title": "Eid Flower Tree", "notes": ["Rose", "Hydrangea", "Branch trunk", "Clear fruit box"], "carved": "Carved watermelon — dove", "cat": "Signature Centrepieces"}, {"src": "images/pink-orchid-crescent.jpg", "title": "Pink Orchid Crescent", "notes": ["Phalaenopsis orchid", "Rose", "Anthurium", "Allium", "Hydrangea"], "carved": "Carved watermelon — phoenix", "cat": "Signature Centrepieces"}, {"src": "images/white-orchid-delphinium.jpg", "title": "White Orchid and Delphinium Centrepiece", "notes": ["Phalaenopsis orchid", "Hydrangea", "Rose", "Blue delphinium"], "carved": "Carved watermelon — horse", "cat": "Signature Centrepieces"}, {"src": "images/red-floral-column.jpg", "title": "Red Floral Column", "notes": ["Hydrangea", "Celosia", "Rose", "Anthurium"], "carved": "Carved watermelon — koi pair", "cat": "Signature Centrepieces"}, {"src": "images/purple-garden.jpg", "title": "Purple Garden Centrepiece", "notes": ["Rose", "Lisianthus", "Hydrangea", "Stock", "Eremurus"], "carved": "Carved watermelon — swan", "cat": "Signature Centrepieces"}, {"src": "images/white-gladiolus.jpg", "title": "White Gladiolus Centrepiece", "notes": ["Gladiolus", "Rose", "Hydrangea", "Cymbidium orchid"], "carved": "Carved watermelon — fish", "cat": "Signature Centrepieces"}, {"src": "images/lily-orchid-tower.jpg", "title": "Lily and Orchid Tower", "notes": ["Oriental lily", "Delphinium", "Rose", "Purple orchid"], "carved": "Carved watermelon — roses", "cat": "Signature Centrepieces"}, {"src": "images/pink-rose-vanda.jpg", "title": "Pink Rose and Vanda Centrepiece", "notes": ["Rose", "Hydrangea", "Anthurium", "Purple vanda orchid"], "carved": "Carved watermelon — fish", "cat": "Signature Centrepieces"}, {"src": "images/two-tone-statement.jpg", "title": "Two-Tone Statement Bouquet", "notes": ["Red rose", "Pink rose", "Celosia", "Yellow rose", "Button chrysanthemum", "Solidago"], "carved": "", "cat": "Hand-Tied Bouquets"}, {"src": "images/garden-rose-hand.jpg", "title": "Garden Rose Hand Bouquet", "notes": ["Garden rose", "Spray rose", "Chamomile", "Solidago", "Dusty miller"], "carved": "", "cat": "Hand-Tied Bouquets"}, {"src": "images/gladiolus-spider-gerbera.jpg", "title": "Gladiolus and Spider Gerbera", "notes": ["Red gladiolus", "Orange spider gerbera", "Allium", "White paper", "Red mesh"], "carved": "", "cat": "Hand-Tied Bouquets"}, {"src": "images/soft-pink-garden-roses.jpg", "title": "Soft Pink Garden Roses", "notes": ["Garden rose", "Spray chrysanthemum", "Waxflower", "Layered pink wrap"], "carved": "", "cat": "Hand-Tied Bouquets"}, {"src": "images/new-baby-bouquet.jpg", "title": "New Baby Bouquet", "notes": ["Oriental lily", "Rose", "Hydrangea", "Eucalyptus", "Keepsake tag"], "carved": "", "cat": "Hand-Tied Bouquets"}, {"src": "images/iridescent-wrap.jpg", "title": "Iridescent Wrap Bouquet", "notes": ["Rose", "Hydrangea", "Carnation", "Dianthus", "Holographic wrap"], "carved": "", "cat": "Hand-Tied Bouquets"}, {"src": "images/peony-snapdragon-vase.jpg", "title": "Peony and Snapdragon Vase", "notes": ["Peony", "Snapdragon", "Chrysanthemum", "Curly willow", "Matte ceramic pot"], "carved": "", "cat": "Vase & Box"}, {"src": "images/red-rose-ranunculus.jpg", "title": "Red Rose and Ranunculus", "notes": ["Rose", "Ranunculus", "Carnation", "Red pussy willow", "Marble vase"], "carved": "", "cat": "Vase & Box"}, {"src": "images/gerbera-meadow-box.jpg", "title": "Gerbera Meadow Box", "notes": ["Gerbera", "Ornithogalum", "Moss-filled box"], "carved": "", "cat": "Vase & Box"}, {"src": "images/garden-gift-scene.jpg", "title": "Garden Gift Scene", "notes": ["Rose", "Hydrangea", "Cloche-covered rose", "Bamboo frame", "Moss base"], "carved": "", "cat": "Events & Displays"}, {"src": "images/yacht-dining-styling.jpg", "title": "Yacht Dining Styling", "notes": ["Vase arrangement", "Orchid", "Fruit accents", "Fruit base"], "carved": "", "cat": "Events & Displays"}, {"src": "images/all-white-gift-display.jpg", "title": "All-White Gift Display", "notes": ["Phalaenopsis orchid", "Tulip", "Rose", "Delphinium"], "carved": "", "cat": "Events & Displays"}, {"src": "images/jewellery-display-garland.jpg", "title": "Jewellery Display Garland", "notes": ["Rose", "Oriental lily", "Orchid", "Anthurium"], "carved": "", "cat": "Events & Displays"}, {"src": "images/fruit-christmas-trees.jpg", "title": "Fruit Christmas Trees", "notes": ["Berries", "Grape", "Kiwi", "Dragon fruit star", "Melon star"], "carved": "", "cat": "Fruit Art"}, {"src": "images/watermelon-fruit-cake.jpg", "title": "Watermelon Fruit Cake", "notes": ["Watermelon base", "Fresh berries", "Fig"], "carved": "", "cat": "Fruit Art"}, {"src": "images/berry-bouquet.jpg", "title": "Berry Bouquet", "notes": ["Strawberry", "Blueberry", "Blackberry", "Redcurrant", "Black wrap"], "carved": "", "cat": "Fruit Art"}];
+
+/* header */
+addEventListener('scroll',function(){document.getElementById('hdr').classList.toggle('on',scrollY>40);},{passive:true});
+
+/* reveal */
+var io=new IntersectionObserver(function(es){es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('in')},i*80);io.unobserve(e.target);}})},{threshold:.1,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+/* filters */
+var F={cat:'all',colour:null};
+var pieces=[].slice.call(document.querySelectorAll('.piece'));
+function applyF(){
+  var shown=0;
+  pieces.forEach(function(p){
+    var okc=F.cat==='all'||p.dataset.cat===F.cat;
+    var okl=!F.colour||p.dataset.colour===F.colour;
+    var ok=okc&&okl; p.classList.toggle('hide',!ok); if(ok)shown++;
+  });
+  document.getElementById('empty').style.display=shown?'none':'block';
+}
+document.querySelectorAll('[data-f]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var k=b.dataset.f,v=b.dataset.v;
+    if(k==='cat'){F.cat=v;document.querySelectorAll('[data-f="cat"]').forEach(function(x){x.classList.toggle('on',x===b)});}
+    else{var same=F.colour===v;F.colour=same?null:v;document.querySelectorAll('[data-f="colour"]').forEach(function(x){x.classList.toggle('on',!same&&x===b)});}
+    applyF();
+  });
+});
+
+/* lightbox */
+var lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg'),cur=0;
+function visible(){return pieces.filter(function(p){return !p.classList.contains('hide')});}
+function open(i){
+  cur=i; var d=DATA[i];
+  lbimg.src=d.src; lbimg.alt=d.title;
+  document.getElementById('lbcat').textContent=d.cat;
+  document.getElementById('lbtitle').textContent=d.title;
+  var ul=document.getElementById('lbnotes'); ul.innerHTML='';
+  d.notes.forEach(function(n){var li=document.createElement('li');li.textContent=n;ul.appendChild(li);});
+  var c=document.getElementById('lbcarved');
+  if(d.carved){c.textContent=d.carved;c.hidden=false;}else{c.hidden=true;}
+  var v=visible(),pos=v.indexOf(pieces[i]);
+  document.getElementById('lbcount').textContent=(pos>=0?(pos+1)+' / '+v.length:'');
+  lb.classList.add('open'); requestAnimationFrame(function(){lb.classList.add('show')});
+  document.body.style.overflow='hidden';
+}
+function close(){lb.classList.remove('show');setTimeout(function(){lb.classList.remove('open');lbimg.src='';},380);document.body.style.overflow='';}
+function move(dir){
+  var v=visible(); if(!v.length)return;
+  var p=v.indexOf(pieces[cur]); if(p<0)p=0;
+  var nx=(p+dir+v.length)%v.length;
+  open(parseInt(v[nx].dataset.i,10));
+}
+pieces.forEach(function(p){
+  p.addEventListener('click',function(){open(parseInt(p.dataset.i,10))});
+  p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(parseInt(p.dataset.i,10));}});
+});
+document.getElementById('lbx').addEventListener('click',close);
+document.getElementById('lbp').addEventListener('click',function(){move(-1)});
+document.getElementById('lbn').addEventListener('click',function(){move(1)});
+lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('lb-stage'))close();});
+addEventListener('keydown',function(e){
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')move(-1); else if(e.key==='ArrowRight')move(1);
+});
+</script>
+</body>
+</html>
