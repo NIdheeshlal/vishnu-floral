@@ -86,6 +86,28 @@ h1,h2,h3,h4{font-family:var(--ser);font-weight:400;margin:0;line-height:1.12;let
 .btn:hover{background:var(--green-dk);border-color:var(--green-dk)}
 .btn.ghost{background:transparent;color:var(--green);border-color:var(--line-2)}
 .btn.ghost:hover{background:var(--paper-2);color:var(--green-dk);border-color:var(--gold-soft)}
+.btn svg{width:14px;height:14px;flex:none}
+.tlink{
+  display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  font-size:13.5px;color:var(--green);padding:10px 4px;border-bottom:1px solid transparent;
+}
+.tlink:hover{border-bottom-color:var(--gold-soft)}
+
+/* resume download card */
+.dl{
+  display:flex;align-items:center;gap:18px;margin-top:30px;
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;text-decoration:none;transition:.18s;
+}
+.dl:hover{border-color:var(--gold-soft);box-shadow:0 10px 26px -18px rgba(27,42,35,.35)}
+.dl .ic{
+  width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:var(--green);color:#fff;
+}
+.dl .ic svg{width:18px;height:18px}
+.dl b{display:block;font-size:15.5px;font-weight:500;color:var(--ink)}
+.dl span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.dl .ar{margin-left:auto;color:var(--gold);font-size:19px;flex:none}
 @media(max-width:900px){.navl a:not(.btn){display:none}.bar .in{padding:0 20px;gap:12px}.btn{padding:9px 15px;font-size:13px}}
 
 /* ---------- hero ---------- */
@@ -335,6 +357,7 @@ footer .in{max-width:var(--maxw);margin:0 auto;padding:0 32px;display:flex;justi
       <a href="#experience">Experience</a>
       <a href="#work">Work</a>
       <a href="#signature">Signature</a>
+      <a href="Vishnu-P-Resume.pdf" download>Resume</a>
       <a class="btn" href="mailto:vishnupookootty@gmail.com">Contact</a>
     </nav>
   </div>
@@ -352,8 +375,12 @@ footer .in{max-width:var(--maxw);margin:0 auto;padding:0 32px;display:flex;justi
         <div class="hrule"></div>
         <p class="lede">Five years designing floral work for U.A.E. retail and events — custom bouquets, vase arrangements, event displays, and large signature centrepieces that sit on a bed of fresh fruit with a <b>watermelon carved by hand</b>.</p>
         <div class="hacts">
-          <a class="btn" href="mailto:vishnupookootty@gmail.com">Email Vishnu</a>
-          <a class="btn ghost" href="#work">View 26 pieces</a>
+          <a class="btn" href="Vishnu-P-Resume.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a class="btn ghost" href="mailto:vishnupookootty@gmail.com">Email Vishnu</a>
+          <a class="tlink" href="#work">View 26 pieces &rarr;</a>
         </div>
         <div class="stats">
           <div class="stat"><b>5</b><span>Years in the trade</span></div>
@@ -739,6 +766,11 @@ footer .in{max-width:var(--maxw);margin:0 auto;padding:0 32px;display:flex;justi
         <h2 class="h2">Available for <em>employment and commissions</em></h2>
         <p class="lede" style="margin-top:24px">Weddings, events, hotel and retail floral, corporate gifting, and private orders across the United Arab Emirates.</p>
         <div class="avail"><span class="dot"></span> Open to new opportunities</div>
+        <a class="dl" href="Vishnu-P-Resume.pdf" download>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
+          <span><b>Download Resume</b><span>PDF &middot; one page &middot; full CV with contact details</span></span>
+          <span class="ar">&darr;</span>
+        </a>
       </div>
       <div class="clist">
         <dl>
